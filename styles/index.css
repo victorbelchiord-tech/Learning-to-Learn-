@@ -25,8 +25,6 @@ img {
 
 .page {
   width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
   font-family: "Helvetica Neue", Arial, sans-serif;
   box-sizing: border-box;
 }
