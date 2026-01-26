@@ -1,0 +1,37 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__title {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section__subtitle {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.video__iframes {
+  margin-top: 50px;
+  row-gap: 20px;
+  display: flex;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
