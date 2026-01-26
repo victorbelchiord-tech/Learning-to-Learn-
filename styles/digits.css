@@ -1,0 +1,58 @@
+.digits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.digits__title {
+  display: flex;
+  justify-self: center;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.digits__subtitle {
+  display: flex;
+  justify-self: center;
+  margin-bottom: 60px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  display: flex;
+  width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  width: 250px;
+}
+
+.cell__heading {
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cell__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.cell__text--accent {
+  margin-top: 20px;
+  display: flex;
+}

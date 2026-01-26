@@ -1,0 +1,42 @@
+.description {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.two__columns {
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  width: 80%;
+}
+
+.brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.main__text {
+  width: 80%;
+  min-width: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.paragraph {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.span__accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}

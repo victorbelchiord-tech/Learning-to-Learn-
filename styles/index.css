@@ -1,0 +1,217 @@
+@import url(../vendor/normalize.css);
+@import url(../styles/header.css);
+@import url(../styles/description.css);
+@import url(../styles/techniques.css);
+@import url(../styles/video.css);
+@import url(../styles/oakley.css);
+@import url(../styles/feynman.css);
+@import url(../styles/digits.css);
+@import url(../styles/khan.css);
+@import url(../styles/kaufman.css);
+@import url(../styles/resources.css);
+@import url(../styles/footer.css);
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.page {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1138px) {
+  /* 1. HEADER (Onde o posicionamento absoluto quebrava) */
+  .header {
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    flex-direction: column;
+    padding: 100px 20px 40px; /* Espaço para o logo no topo */
+  }
+
+  .logo {
+    left: 20px;
+    top: 20px;
+  }
+
+  .header__title {
+    position: static; /* Sai de cima da imagem */
+    width: 100%;
+    font-size: 52px; /* Diminuímos o tamanho da fonte */
+    line-height: 1.1;
+    margin-bottom: 30px;
+  }
+
+  .header__subtitle {
+    position: static;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .header__image {
+    position: relative; /* Para o z-index funcionar */
+    z-index: 2; /* Fica na frente do quadrado */
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .header__square {
+    display: block; /* Garante que ele apareça */
+    position: absolute;
+    width: 300px; /* Tamanho menor para caber no celular */
+    height: 300px;
+    top: 50%; /* Posiciona no meio da altura do header */
+    left: 50%; /* Posiciona no meio da largura */
+    transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+    z-index: 1; /* Fica atrás da imagem (que deve ter z-index 2) */
+    right: auto; /* Anula o 'right: 0' do desktop */
+  }
+
+  /* 2. DESCRIÇÃO (TWO COLUMNS) */
+  .two__columns {
+    flex-direction: column;
+    width: 90%;
+    gap: 30px;
+  }
+
+  .brief {
+    width: 100%;
+  }
+
+  .main__text {
+    width: 100%;
+    min-width: auto; /* IMPORTANTE: Remove a trava de 784px */
+  }
+
+  /* 3. DIGITS & TABLES */
+  .digits__title,
+  .digits__subtitle {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 42px;
+  }
+
+  .table {
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px;
+    row-gap: 40px;
+  }
+
+  .cell {
+    margin-right: 0;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /* 4. FEYNMAN (Removendo o absoluto da imagem) */
+  .feynman {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .feynman__title {
+    width: 100%;
+    font-size: 52px;
+  }
+
+  .feynman__subtitle {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .feynman__link {
+    position: static;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .feynman__image {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  /* 5. KAUFMAN (Tabela Escura) */
+  .kaufman {
+    overflow: hidden; /* Garante que as pontas do triângulo não criem barra de rolagem */
+    padding-bottom: 60px;
+  }
+
+  .kaufman__title_theme_dark {
+    width: 90%;
+    font-size: 42px;
+  }
+
+  .table__theme_dark {
+    width: 100%;
+    row-gap: 40px;
+  }
+
+  .cell__theme_dark {
+    margin-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .kaufman__triangle {
+    display: block; /* Garante que ele apareça */
+    position: absolute;
+    width: 400px; /* Tamanho reduzido para telas menores */
+    height: 400px;
+    top: 50%; /* Centraliza verticalmente na seção */
+    right: -100px; /* Deixa ele levemente "cortado" na lateral, como no design original */
+    transform: translateY(-50%); /* Ajuste fino de centralização */
+    z-index: 1; /* Fica atrás do texto e da tabela */
+    opacity: 0.6; /* Opcional: deixa ele mais suave para não atrapalhar a leitura */
+  }
+
+  .kaufman__title_theme_dark,
+  .kaufman__subtitle_theme_dark,
+  .table__theme_dark {
+    position: relative; /* Garante que o conteúdo fique acima do triângulo */
+    z-index: 10;
+  }
+
+  /* 6. FOOTER */
+  .footer__columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .footer__column_content {
+    flex-basis: auto;
+    align-self: center;
+  }
+
+  .footer__logo_content {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__column_content_about {
+    margin: 0;
+  }
+
+  .footer__content {
+    align-items: center;
+  }
+}

@@ -1,0 +1,92 @@
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: 64px;
+  width: 154px;
+  height: 34px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.black__ball {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.letter__Y {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.logo__title {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header__title {
+  display: flex;
+  align-self: center;
+  width: 730px;
+  margin-right: auto;
+  z-index: 10;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  position: absolute;
+  left: 64px;
+}
+
+.header__subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 400px;
+  text-decoration: none;
+  z-index: 10;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__image {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  height: 608px;
+  width: 756px;
+}
+
+.header__square {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+}
