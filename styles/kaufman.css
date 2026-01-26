@@ -79,4 +79,18 @@
   right: -163px;
   max-width: 960px;
   max-height: 960px;
+  transform: rotate(-38deg);
+}
+
+.rotation {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-38deg);
+  }
+  to {
+    transform: rotate(327deg);
+  }
 }

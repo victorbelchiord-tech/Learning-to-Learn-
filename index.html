@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Learning How to Learn</title>
   </head>
   <body>
@@ -29,14 +28,14 @@
           class="header__image"
         />
 
-        <div class="header__square"></div>
+        <div class="header__square rotation"></div>
       </header>
       <main class="content">
         <section class="description">
-          <div class="two__columns">
-            <div class="brief">The biggest problem in education</div>
-            <div class="main__text">
-              <p class="paragraph">
+          <div class="description__two_columns">
+            <h2 class="description__brief">The biggest problem in education</h2>
+            <div class="description__main_text">
+              <p class="description__paragraph">
                 Whether at school or university, the subject that nobody will
                 teach you is how to become self-taught. We repeat specific
                 exercises and memorize information without thinking, and when
@@ -45,7 +44,7 @@
                 guarantee that it will be retained. In the end, we are only
                 really learning how to pass our tests.
               </p>
-              <p class="paragraph">
+              <p class="description__paragraph">
                 <span class="span__accent">Here's the real question:</span>Will
                 this approach of repetition and memorization really help us
                 understand the subject? The consensus in academia is that it
@@ -53,7 +52,7 @@
                 is knowing how to study, but for some reason this issue is
                 always left aside. So, what can we do to remedy this?
               </p>
-              <p class="paragraph">
+              <p class="description__paragraph">
                 Well, there are several techniques and exercises that can be
                 applied to the educational process to help make it more
                 efficient and engaging. Keep reading to discover some of the
@@ -63,6 +62,103 @@
           </div>
         </section>
 
+        <section class="techniques">
+          <h2 class="section__title">Learning Techniques</h2>
+          <p class="section__subtitle">The Five Strategies of Barbara Oakley</p>
+          <div class="cards">
+            <div class="card__item">
+              <div>
+                <img
+                  src="./images/cards-attention.png"
+                  alt="image about the book The Two Ways of Thinking"
+                  class="card__image"
+                />
+              </div>
+              <p class="card__title">The Two Ways of Thinking</p>
+              <p class="card__description">
+                Deep understanding arises from the ability to switch between
+                diffuse and focused thinking.
+              </p>
+            </div>
+
+            <div class="card__item">
+              <div>
+                <img
+                  src="./images/cards-recall.png"
+                  alt="image about a statue of a boy thinking"
+                  class="card__image"
+                />
+              </div>
+              <p class="card__title">Recalling</p>
+              <p class="card__description">
+                Improving your ability to recall small but important pieces of
+                information helps connect different parts of the brain.
+              </p>
+            </div>
+
+            <div class="card__item">
+              <div>
+                <img
+                  src="./images/cards-interleaving.png"
+                  alt="image of a place with a lot of persons"
+                  class="card__image"
+                />
+              </div>
+              <p class="card__title">Interleaving</p>
+              <p class="card__description">
+                When you learn different skills at the same time, they
+                strengthen each other.
+              </p>
+            </div>
+
+            <div>
+              <div>
+                <img
+                  src="./images/cards-question.png"
+                  alt="image of a guy thinking about the questions of life"
+                  class="card__image"
+                />
+              </div>
+              <p class="card__title">Questions</p>
+              <p class="card__description">
+                When listening to your teacher, think of a good question,
+                something you would really like to know.
+              </p>
+            </div>
+
+            <div>
+              <div>
+                <img
+                  src="./images/cards-competence.png"
+                  alt="image of a lot of books"
+                  class="card__image"
+                />
+              </div>
+              <p class="card__title">The Illusion of Competence</p>
+              <p class="card__description">
+                Test yourself, take notes, talk to someone else, and repeat the
+                process in different situations.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="video"></section>
+        <section class="oakley"></section>
+
+        <section class="feynman">
+          <div class="feynman__title">The Feynman Technique</div>
+          <div class="feynman__subtitle">Learn without forgetting</div>
+          <div>
+            <a href="#" class="feynman__link">More →</a>
+          </div>
+
+          <img
+            src="./images/feynman.png"
+            alt="A photo of Richard Feynman, a world-renowned quantum physicist. The Feynman Technique derives from his study methods when he was a student at Princeton."
+            class="feynman__image"
+          />
+        </section>
+
         <section class="digits">
           <div class="digits__title">Facts and numbers</div>
           <div class="digits__subtitle">About the brain and learning</div>
@@ -70,7 +166,7 @@
             <ul class="table">
               <li class="cell">
                 <p class="cell__heading">86 billion</p>
-                <p class="cell__text"></p>
+                <p class="cell__text">
                   The number of neurons in the human brain
                 </p>
               </li>
@@ -130,20 +226,7 @@
           </div>
         </section>
 
-        <section class="feynman">
-          <div class="feynman__title">The Feynman Technique</div>
-          <div class="feynman__subtitle">Learn without forgetting</div>
-          <div>
-            <a href="#" class="feynman__link">More →</a>
-          </div>
-
-          <img
-              src="./images/feynman.png"
-              alt="A photo of Richard Feynman, a world-renowned quantum physicist. The Feynman Technique derives from his study methods when he was a student at Princeton."
-              class="feynman__image"
-          />
-
-        </section>
+        <section class="khan"></section>
 
         <section class="kaufman">
           <div class="kaufman__title_theme_dark">
@@ -154,30 +237,30 @@
             <ul class="table__theme_dark">
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">1</p>
-                <p class="cell__text_theme_dark"
-                  >Choose a project that brings you interest</p
-                >
+                <p class="cell__text_theme_dark">
+                  Choose a project that brings you interest
+                </p>
               </li>
 
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">2</p>
-                <p class="cell__text_theme_dark"
-                  >Focus your energy on one skill at a time</p
-                >
+                <p class="cell__text_theme_dark">
+                  Focus your energy on one skill at a time
+                </p>
               </li>
 
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">3</p>
-                <p class="cell__text_theme_dark"
-                  >Define your target performance level</p
-                >
+                <p class="cell__text_theme_dark">
+                  Define your target performance level
+                </p>
               </li>
 
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">4</p>
-                <p class="cell__text_theme_dark"
-                  >Disassemble the skill into sub-skills</p
-                >
+                <p class="cell__text_theme_dark">
+                  Disassemble the skill into sub-skills
+                </p>
               </li>
 
               <li class="cell__theme_dark">
@@ -187,48 +270,47 @@
 
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">6</p>
-                <p class="cell__text_theme_dark"
-                  >Eliminate barriers to practice</p
-                >
+                <p class="cell__text_theme_dark">
+                  Eliminate barriers to practice
+                </p>
               </li>
 
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">7</p>
-                <p class="cell__text_theme_dark"
-                  >Dedicate time to practice</p
-                >
+                <p class="cell__text_theme_dark">Dedicate time to practice</p>
               </li>
 
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">8</p>
-                <p class="cell__text_theme_dark"
-                  >Create rapid feedback cycles</p
-                >
+                <p class="cell__text_theme_dark">
+                  Create rapid feedback cycles
+                </p>
               </li>
 
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">9</p>
-                <p class="cell__text_theme_dark"
-                  >Practice using the timer, in short time intervals</p
-                >
+                <p class="cell__text_theme_dark">
+                  Practice using the timer, in short time intervals
+                </p>
               </li>
 
               <li class="cell__theme_dark">
                 <p class="cell__heading_theme_dark">10</p>
-                <p class="cell__text_theme_dark"
-                  >Emphasize quantity and speed</p
-                >
+                <p class="cell__text_theme_dark">
+                  Emphasize quantity and speed
+                </p>
               </li>
             </ul>
 
             <img
-                src="./images/triangle.svg"
-                alt="A large blue triangle, over which Josh Kaufman claims ownership"
-                class="kaufman__triangle"
+              src="./images/triangle.svg"
+              alt="A large blue triangle, over which Josh Kaufman claims ownership"
+              class="kaufman__triangle rotation"
             />
-
           </div>
         </section>
+
+        <section class="resources"></section>
       </main>
       <footer class="footer">
         <div class="footer__columns">
@@ -263,7 +345,10 @@
             Social Media
             <ul class="footer__content">
               <li class="footer__list">
-                <a href="https://www.facebook.com/victor.belchiordias/?locale=pt_PT" target="_blank" class="footer__column_link"
+                <a
+                  href="https://www.facebook.com/victor.belchiordias/?locale=pt_PT"
+                  target="_blank"
+                  class="footer__column_link"
                   ><img
                     src="./images/facebook_white.svg"
                     alt="Facebook"
@@ -272,7 +357,10 @@
                 >
               </li>
               <li class="footer__list">
-                <a href="https://www.instagram.com/victor_belchiordias/" target="_blank" class="footer__column_link"
+                <a
+                  href="https://www.instagram.com/victor_belchiordias/"
+                  target="_blank"
+                  class="footer__column_link"
                   ><img
                     src="./images/instagram_white.svg"
                     alt="Instagram"
