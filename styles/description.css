@@ -3,14 +3,14 @@
   margin-top: 100px;
 }
 
-.description__two_columns {
+.two_columns {
   display: flex;
   justify-content: space-between;
   justify-self: center;
   width: 80%;
 }
 
-.description__brief {
+.brief {
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -18,7 +18,7 @@
   color: #2f80ed;
 }
 
-.description__main_text {
+.main_text {
   width: 80%;
   min-width: auto;
   line-height: 34px;
@@ -26,12 +26,12 @@
   font-weight: normal;
 }
 
-.description__paragraph {
+.paragraph {
   margin-bottom: 30px;
   margin-top: 0;
 }
 
-.description__paragraph:last-child {
+.paragraph:last-child {
   margin-bottom: 0;
 }
 
