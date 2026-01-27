@@ -1,6 +1,6 @@
-Learning to Learn 🧠\*\*
+**Learning to Learn 🧠**
 
-📝 Project Description
+**📝 Project Description**
 
 Learning to Learn is a study management system developed to help students and technology enthusiasts organize their progress in different learning paths. The main objective is to allow the registration of courses, documentation of studied topics, and a clear visualization of what still needs to be learned.
 
