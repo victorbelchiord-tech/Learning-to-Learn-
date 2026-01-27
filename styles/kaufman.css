@@ -75,11 +75,11 @@
 .kaufman__triangle {
   display: flex;
   position: absolute;
-  top: 0;
+  top: 105px;
   right: -163px;
   max-width: 960px;
   max-height: 960px;
-  transform: rotate(-38deg);
+  transform: rotate(30deg);
 }
 
 .rotation {
@@ -88,9 +88,9 @@
 
 @keyframes rotate {
   from {
-    transform: rotate(-38deg);
+    transform: rotate(30deg);
   }
   to {
-    transform: rotate(327deg);
+    transform: rotate(390deg);
   }
 }
