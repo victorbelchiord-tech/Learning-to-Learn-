@@ -1,33 +1,16 @@
 @import url(../vendor/normalize.css);
-@import url(../styles/header.css);
-@import url(../styles/description.css);
-@import url(../styles/techniques.css);
-@import url(../styles/video.css);
-@import url(../styles/oakley.css);
-@import url(../styles/feynman.css);
-@import url(../styles/digits.css);
-@import url(../styles/khan.css);
-@import url(../styles/kaufman.css);
-@import url(../styles/resources.css);
-@import url(../styles/footer.css);
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.page {
-  width: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  box-sizing: border-box;
-}
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/description.css);
+@import url(../blocks/techniques.css);
+@import url(../blocks/video.css);
+@import url(../blocks/oakley.css);
+@import url(../blocks/feynman.css);
+@import url(../blocks/digits.css);
+@import url(../blocks/khan.css);
+@import url(../blocks/kaufman.css);
+@import url(../blocks/resources.css);
+@import url(../blocks/footer.css);
 
 @media (max-width: 1138px) {
   /* 1. HEADER (Onde o posicionamento absoluto quebrava) */
