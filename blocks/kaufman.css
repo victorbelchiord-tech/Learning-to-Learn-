@@ -94,3 +94,9 @@
     transform: rotate(390deg);
   }
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 544px) {
+}

@@ -114,3 +114,9 @@
   height: 25px;
   margin-right: 10px;
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 544px) {
+}

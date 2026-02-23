@@ -29,12 +29,20 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px 100px;
-  width: 920px;
+  gap: 3.75rem 6.25rem;
+  width: 57.5rem;
+  padding-top: 3rem;
 }
 
 .card__item {
-  width: 240px;
+  width: 100%;
+  box-shadow: 10px 15px 20px;
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.card__item:hover {
+  transform: scale(1.05);
 }
 
 .card__image {
@@ -57,4 +65,11 @@
   line-height: 23px;
   font-size: 18px;
   font-weight: normal;
+  padding: 0.312rem 0.625rem;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 544px) {
 }
