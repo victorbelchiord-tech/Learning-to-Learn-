@@ -1,4 +1,4 @@
-.section__title {
+.resources__title {
   display: flex;
   justify-content: center;
   width: 60%;
@@ -10,7 +10,7 @@
   font-weight: bold;
 }
 
-.section__subtitle {
+.resources__subtitle {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -25,8 +25,9 @@
   margin-top: 80px;
   margin-bottom: 217px;
   display: flex;
-  flex-direction: row;
-  width: 1100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .resources__logo {
   width: 270px;

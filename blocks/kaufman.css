@@ -8,16 +8,10 @@
 }
 
 .table__theme_dark {
-  display: flex;
-  width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 90px;
-  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 5rem 1.25rem 5.625rem;
   row-gap: 80px;
-  flex-wrap: wrap;
-  padding: 0;
-  justify-content: center;
 }
 
 .kaufman__title_theme_dark {
@@ -95,8 +89,13 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
-}
+@media screen and (max-width: 1076px) {
+  .table__theme_dark {
+    grid-template-columns: repeat(4, 1fr);
 
-@media screen and (max-width: 544px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 544px) {
+  }
 }

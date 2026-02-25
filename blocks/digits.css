@@ -22,22 +22,17 @@
 }
 
 .table {
-  display: flex;
-  width: 1250px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0;
-  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 60px;
-  flex-wrap: wrap;
-  padding: 0;
+  padding: 20px;
 }
 
 .cell {
   display: flex;
   flex-direction: column;
-  margin-right: 60px;
   width: 250px;
+  justify-self: center;
 }
 
 .cell__heading {

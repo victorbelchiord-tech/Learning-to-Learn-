@@ -1,6 +1,6 @@
 .description {
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: 6.25rem;
+  margin-top: 6.25rem;
 }
 
 .two_columns {
@@ -11,7 +11,7 @@
 }
 
 .brief {
-  width: 175px;
+  width: 10.94rem;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -27,7 +27,7 @@
 }
 
 .paragraph {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   margin-top: 0;
 }
 
@@ -45,4 +45,11 @@
 }
 
 @media screen and (max-width: 544px) {
+  .two_columns {
+    flex-direction: column;
+  }
+
+  .brief {
+    margin-bottom: 1.25rem;
+  }
 }
